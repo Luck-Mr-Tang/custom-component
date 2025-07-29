@@ -3,6 +3,7 @@ import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
+import Index from './views/index/index.vue'
 // 导入样式
 import './styles/element/index.scss'
 import 'element-plus/dist/index.css'
@@ -24,7 +25,7 @@ export * from './types/axios'
 
 // 核心组件列表
 const components = {
- 
+  Index
 }
 
 // 安装函数
@@ -50,6 +51,7 @@ const install = (app: App): void => {
 // 导出核心组件
 export {
   // 组件
+  Index,
   // 工具函数
   requestUtils,
   

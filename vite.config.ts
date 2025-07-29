@@ -73,8 +73,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'custom-component',
-      fileName: (format) => `custom-component.${format}.js`
+      name: 'VueElementCustom',
+      fileName: (format) => `vue-custom-element.${format}.js`
     },
     rollupOptions: {
       external: ['vue', 'vue-router', 'pinia', 'element-plus'],

@@ -3,7 +3,7 @@ import { Router } from 'vue-router'
 
 // 组件类型声明
 export interface WorkPackComponents {
-  
+  Index: Component
 }
 
 // 工具函数类型
@@ -86,13 +86,12 @@ export default _default
 // 全局类型声明
 declare global {
   interface Window {
-
   }
 }
 
 // Vue组件类型扩展
 declare module '@vue/runtime-core' {
   interface GlobalComponents {
-
+    Index: Component
   }
 }
