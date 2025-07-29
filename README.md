@@ -1,18 +1,5 @@
 # Vue Custom Element
 
-> 一个基于 Vue3 + TypeScript + Vite + Element Plus 的Vue自定义Element组件库
-
-## ✨ 特性
-
-- 🚀 **现代化技术栈**：基于 Vue 3 + TypeScript + Vite 构建
-- 📦 **开箱即用**：集成 Element Plus、Pinia、Vue Router 等常用库
-- 🎨 **丰富的组件**：提供实用的业务组件和工具函数
-- 🔧 **自动化导入**：支持组件和 API 的自动导入，提升开发效率
-- 🎯 **TypeScript 支持**：完整的类型定义，提供良好的开发体验
-- 🎪 **图标系统**：集成 Element Plus Icons 和 SVG 图标系统
-- 📱 **响应式设计**：支持多种设备尺寸的适配
-- 🛡️ **代码质量**：ESLint + TypeScript 保证代码质量
-
 ## 🔧 技术栈
 
 - **框架**：Vue 3.3+
@@ -233,19 +220,3 @@ pnpm version:major
 3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 创建 Pull Request
-
-## 📄 许可证
-
-本项目基于 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
-
-## 🙏 致谢
-
-- [Vue.js](https://vuejs.org/) - 渐进式 JavaScript 框架
-- [Element Plus](https://element-plus.org/) - 基于 Vue 3 的桌面端组件库
-- [Vite](https://vitejs.dev/) - 下一代前端构建工具
-- [TypeScript](https://www.typescriptlang.org/) - JavaScript 的超集
-- [Pinia](https://pinia.vuejs.org/) - Vue 的状态管理库
-
----
-
-如果这个项目对你有帮助，请给一个 ⭐️ 支持一下！
