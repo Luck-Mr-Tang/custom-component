@@ -1,0 +1,8 @@
+
+// 这里只需要导入那些通过 js 动态创建的组件样式
+@use "element-plus/theme-chalk/src/message.scss";
+@use "element-plus/theme-chalk/src/message-box.scss";
+@use "element-plus/theme-chalk/src/notification.scss";
+@use "element-plus/theme-chalk/src/loading.scss";
+
+@use "../common/index.scss";

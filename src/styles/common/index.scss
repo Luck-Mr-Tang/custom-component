@@ -1,0 +1,137 @@
+@use './reset.scss';
+
+// 基础样式
+.cont-bg {
+  background: #fff;
+  padding: 20px 24px;
+}
+
+.border {
+  border: 1px solid rgba(239, 239, 245, 1);
+}
+
+// 定义变量
+$base-unit: 2px; // 基础单位
+$pixel: (
+  0,
+  2,
+  4,
+  6,
+  8,
+  10,
+  12,
+  14,
+  16,
+  18,
+  20,
+  24,
+  28,
+  32,
+  36,
+  40,
+  48,
+  56,
+  64
+); // 更实用的间距序列
+$positions: (
+  't': top,
+  'r': right,
+  'b': bottom,
+  'l': left
+);
+
+// 生成 margin 和 padding 类
+@each $size in $pixel {
+  @each $key, $pos in $positions {
+    .m#{$key}#{$size} {
+      margin-#{$pos}: $size + px;
+    }
+
+    .p#{$key}#{$size} {
+      padding-#{$pos}: $size + px;
+    }
+  }
+
+  // 生成四周相等的 margin 和 padding
+  .m#{$size} {
+    margin: $size + px;
+  }
+
+  .p#{$size} {
+    padding: $size + px;
+  }
+
+  // 生成字体大小类
+  .fs#{$size} {
+    font-size: $size + px;
+  }
+}
+
+// 添加一些实用的辅助类
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// 自定义滚动条样式
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+// 页面主滚动条样式
+html {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f8f9fa;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #d3d3d3 0%, #b8b8b8 100%);
+    border-radius: 5px;
+    border: 1px solid #e1e4e8;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #b8b8b8 0%, #a1a1a1 100%);
+  }
+}
+
+// Firefox 滚动条样式
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}

@@ -1,0 +1,84 @@
+{
+  "name": "custom-component",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/custom-component.umd.js",
+  "module": "dist/custom-component.es.js",
+  "types": "dist/index.d.ts",
+  "description": "一个基于Vue3 + TypeScript + Vite + Element Plus的自定义组件库",
+  "exports": {
+    ".": {
+      "import": "./dist/custom-component.es.js",
+      "require": "./dist/custom-component.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./dev": {
+      "import": "./dist/custom-component.es.dev.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "INSTALL.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "typescript",
+    "vite",
+    "element-plus",
+    "pinia",
+    "custom-component",
+    "component-library"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "publish:script": "node scripts/publish.js",
+    "type-check": "vue-tsc --noEmit",
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor",
+    "version:major": "npm version major"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@iconify-json/ep": "^1.2.0",
+    "@types/node": "^20.0.0",
+    "@vitejs/plugin-vue": "^4.6.2",
+    "autoprefixer": "^10.4.16",
+    "sass": "^1.70.0",
+    "typescript": "^5.0.0",
+    "unplugin-auto-import": "^0.17.0",
+    "unplugin-icons": "^0.17.0",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^4.5.3",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-tsc": "^1.8.0"
+  },
+  "peerDependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "element-plus": "^2.3.0",
+    "pinia": "^2.1.0",
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0"
+  }
+}
