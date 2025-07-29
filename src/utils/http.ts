@@ -1,6 +1,6 @@
- import createRequest from './request'
+import createRequest from './request'
 import { BASE_URL } from '@/config'
 
-const http = createRequest({ baseURL: BASE_URL })
+const http: ReturnType<typeof createRequest> = createRequest({ baseURL: BASE_URL })
 
 export default http

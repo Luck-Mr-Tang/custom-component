@@ -12,7 +12,12 @@ export interface UserInfo {
   // ...其他字段
 }
 
-export const login = (data: LoginParams): ApiResult<UserInfo> => {
+export interface LoginResponse {
+  token: string
+  userInfo: UserInfo
+}
+
+export const login = (data: LoginParams): ApiResult<LoginResponse> => {
   return http.post('/user/login', data)
 }
 

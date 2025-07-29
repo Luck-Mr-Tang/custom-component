@@ -1,8 +1,10 @@
+import { DirectiveBinding, VNode } from 'vue'
+
 export const permission = {
-    mounted(el, binding, vnode) {
+    mounted(_el: HTMLElement, binding: DirectiveBinding, _vnode: VNode) {
         console.log(binding)
     },
-    unmounted(el, binding, vnode) {
-        
+    unmounted(_el: HTMLElement, _binding: DirectiveBinding, _vnode: VNode) {
+        // 清理逻辑
     },
 }

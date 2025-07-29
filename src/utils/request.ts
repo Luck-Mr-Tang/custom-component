@@ -5,7 +5,6 @@ import { loadingManager } from './loading'
 
 class Request {
   private instance: AxiosInstance
-  private loading: any
 
   constructor(config: RequestConfig) {
     this.instance = axios.create(config)
